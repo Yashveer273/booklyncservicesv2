@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   Facebook,
   Instagram,
@@ -9,7 +10,7 @@ import {
   Twitter,
 } from "lucide-react";
 import Link from "next/link";
-import { footer } from "framer-motion/client";
+
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -52,11 +53,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 mr-3">
-                <img
-                  src="/Book-Lynk-Services-Pvt-Ltd-logo.jpg"
-                  alt="Book Lynk Services Logo"
-                  className="w-full h-full object-contain rounded-lg"
-                />
+                <Image
+  src="/Book-Lynk-Services-Pvt-Ltd-logo.jpg"
+  alt="Book Lynk Services Logo"
+  width={400}      // Set your desired width
+  height={200}     // Set your desired height
+  className="rounded-lg object-contain"
+/>
               </div>
               <span className="text-2xl font-bold text-[var(--color-navy)]">
                 Book Lynk Services
@@ -119,7 +122,7 @@ export default function Footer() {
                 Be the first to know
               </h5>
               <p className="text-gray-500 text-sm mb-4">
-                We'll send you only what matters — no noise, no spam.
+                We Will send you only what matters — no noise, no spam.
               </p>
 
               {isSubscribed ? (
@@ -128,7 +131,7 @@ export default function Footer() {
                     Thank you for subscribing! 🎉
                   </p>
                   <p className="text-green-600 text-sm mt-1">
-                    You'll receive our latest updates and insights.
+                    You Will receive our latest updates and insights.
                   </p>
                 </div>
               ) : (
