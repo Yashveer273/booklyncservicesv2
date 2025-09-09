@@ -3,7 +3,7 @@
 
 import { Quote } from "lucide-react";
 import Footer from "../components/Footer";
-
+import Image from "next/image";
 export default function Testimonials() {
   const testimonials = [
     {
@@ -66,7 +66,7 @@ export default function Testimonials() {
       position: "YouTuber",
       company: "YouTube Channel",
       content:
-        "Simply put, they’re the best in the business! Their tailored approach and exceptional service made all the difference for my practice.",
+        "Simply put, they are the best in the business! Their tailored approach and exceptional service made all the difference for my practice.",
       image: "/profile.jpg",
     },
     {
@@ -75,7 +75,7 @@ export default function Testimonials() {
       position: "Digital Marketer",
       company: "Marketing Agency",
       content:
-        "Incredible team and amazing support! I’ve seen real growth since working with them.",
+        "Incredible team and amazing support! I have seen real growth since working with them.",
       image: "/profile.jpg",
     },
   ];
@@ -97,7 +97,7 @@ export default function Testimonials() {
             >
               {/* Image */}
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex-shrink-0">
-                <img
+                <Image
                   src={t.image}
                   alt={t.name}
                   className="w-full h-full object-cover"

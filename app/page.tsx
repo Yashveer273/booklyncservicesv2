@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import {
   ArrowRight,
   Briefcase,
@@ -12,11 +13,7 @@ import {
   Cpu,
   Layers,
   Star,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Youtube,
-  Twitter,
+  
 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -133,9 +130,7 @@ function VideoCard({ src, title }: { src: string; title: string }) {
 
 export default function Home() {
   const [counters, setCounters] = useState(statsData.map(() => 0));
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
+
 
   // Counter animation on scroll
   useEffect(() => {
@@ -168,35 +163,9 @@ export default function Home() {
   }, []);
 
   // Email validation function
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
 
-  // Handle newsletter subscription
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    setEmailError("");
-    
-    if (!email.trim()) {
-      setEmailError("Email address is required");
-      return;
-    }
-    
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address");
-      return;
-    }
-    
-    // Simulate subscription success
-    setIsSubscribed(true);
-    setEmail("");
-    
-    // Reset thank you message after 3 seconds
-    setTimeout(() => {
-      setIsSubscribed(false);
-    }, 3000);
-  };
+
+  
 
   return (
     <div className="bg-[var(--color-lightgray)]">
@@ -377,7 +346,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="flex justify-center order-1 lg:order-2"
             >
-              <img
+              <Image
                 src="/Ready to Get Started final.jpg"
                 alt="Get Started"
                 className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] rounded-full object-cover shadow-2xl"

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Tag, ExternalLink } from "lucide-react";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
@@ -104,7 +104,7 @@ export default function Portfolio() {
                 viewport={{ once: true }}
                 className="w-full max-w-7xl"
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[650px] object-contain rounded-xl bg-white shadow-md"

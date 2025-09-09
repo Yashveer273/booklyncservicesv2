@@ -4,13 +4,9 @@ import {
   Users,
   Shield,    
   FileText,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Youtube,
-  Twitter,
+ 
 } from 'lucide-react'
-import Link from "next/link";
+
 import Image from 'next/image'
 import Footer from "../components/Footer"; 
 

@@ -1,5 +1,5 @@
 // app/pricing/page.tsx
-import { Check, Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import Footer from "../components/Footer"; 
 
@@ -12,10 +12,10 @@ export default function Pricing() {
       yearlyPrice: "₹2,40,000/year (Save ₹60,000)",
       description: "Everything your brand needs — in one powerful package",
       features: [
-        "Website Maintenance – speed, bug fixes, security checks, backups, reports",
-        "SEO – keyword research, on-page & off-page, Google My Business, monthly reports",
-        "ASO – optimized app titles, keywords, visuals, review management, tracking",
-        "Social Media Marketing – 12-15 posts/month, calendar, reels, captions, engagement",
+        "Website Maintenance - speed, bug fixes, security checks, backups, reports",
+        "SEO - keyword research, on-page & off-page, Google My Business, monthly reports",
+        "ASO - optimized app titles, keywords, visuals, review management, tracking",
+        "Social Media Marketing - 12-15 posts/month, calendar, reels, captions, engagement",
         "Monthly technical & marketing reports",
         "Dedicated support team",
         "No hidden charges",
@@ -86,7 +86,7 @@ export default function Pricing() {
               post on social media? 
               <br className="hidden sm:block" />
               <br className="hidden sm:block" />
-              <span className="font-semibold">We've got you covered.</span>
+              <span className="font-semibold">We have got you covered.</span>
               <br className="hidden sm:block" />
               <br className="hidden sm:block" />
               We offer a comprehensive monthly service that keeps your website
@@ -103,7 +103,7 @@ export default function Pricing() {
         <div className="w-full px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
-              What's Included
+              Whats Included
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
               A complete package of growth services designed to make your brand thrive.

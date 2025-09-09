@@ -3,7 +3,7 @@
 import Footer from "../components/Footer"; 
 
 
-import { Facebook, Instagram, Linkedin, Youtube, Twitter, } from 'lucide-react'
+import Image from "next/image";
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -111,7 +111,7 @@ export default function About() {
               viewport={{ once: true }}
               className="lg:w-1/2 flex justify-center lg:justify-end lg:pr-8 xl:pr-20 mt-6 lg:mt-0"
             >
-              <img
+              <Image
                 src="/our mission.jpg"
                 alt="Our Mission"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-2xl shadow-2xl object-cover"
@@ -213,7 +213,7 @@ export default function About() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8">
-              Let's work together to elevate your brand and achieve your business goals through our comprehensive IT and PR solutions.
+              Lets work together to elevate your brand and achieve your business goals through our comprehensive IT and PR solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
